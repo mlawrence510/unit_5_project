@@ -20,13 +20,13 @@ a {
 .image {
   margin: 0 auto;
   display: block;
+  border-radius: 5px;
 }
 
 #inputField {
-  border-color: lightgrey;
   display: block;
-  margin: 3% auto 0;
+  margin: 6% auto 3%;
   width: 33%;
   height: 40px;
-  border-radius: 3px;
+  border-radius: 5px;
 }

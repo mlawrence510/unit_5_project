@@ -9,10 +9,10 @@ function searchImg() {
   for (i = 0; i < imgs.length; i ++){
     const imgCaption = document.getElementsByTagName('a')[i].getAttribute('data-title').toUpperCase();
     const indexSearch = imgCaption.indexOf(input);
-      if(indexSearch > -1) {
-        document.getElementsByTagName('a')[i].style.display = "";
-      } else {
-        document.getElementsByTagName('a')[i].style.display = "none";
-      }
+    if(indexSearch > -1) {
+      $(document.getElementsByTagName('a')[i]).fadeIn();
+    } else {
+      $(document.getElementsByTagName('a')[i]).fadeOut();
+    }
   }
 }
