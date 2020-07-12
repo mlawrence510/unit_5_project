@@ -1,20 +1,24 @@
+/* -----Base----- */
+
 * {
    box-sizing: border-box;
    margin: 0;
    padding: 0;
 }
 
+/* -----Layout----- */
+
 #image-gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 auto;
-  width: 85%;
+  width: 90%;
 }
 
 a {
   flex: 1 0 21%;
-  margin: 3% 0;
+  margin: 3% 20px;
   }
 
 .image {
@@ -23,10 +27,34 @@ a {
   border-radius: 5px;
 }
 
+/* -----Styles----- */
+
 #inputField {
   display: block;
   margin: 6% auto 3%;
-  width: 33%;
+  width: 200px;
   height: 40px;
-  border-radius: 5px;
+  border: none;
+  border-bottom: 2px solid lightgrey;
+  padding-left: 20px;
+  font-size: 16pt;
+  color: grey;
+}
+
+#inputField:focus {
+  outline: none;
+}
+
+/* -----Media Queries----- */
+
+@media (min-width: 768px) {
+
+  #inputField {
+  width: 33%;
+  }
+
+  #image-gallery {
+    max-width: 1150px;
+  }
+
 }
