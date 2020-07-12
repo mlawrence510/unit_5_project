@@ -1,0 +1,32 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+#image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  width: 85%;
+}
+
+a {
+  flex: 1 0 21%;
+  margin: 3% 0;
+  }
+
+.image {
+  margin: 0 auto;
+  display: block;
+}
+
+.inputField {
+  border-color: lightgrey;
+  display: block;
+  margin: 3% auto 0;
+  width: 33%;
+  height: 40px;
+  border-radius: 3px;
+}
